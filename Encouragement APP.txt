@@ -1,0 +1,23 @@
+package my_project;
+import java.util.Scanner;
+
+public class MyClass {
+	static Scanner userinput = new Scanner(System.in);
+	public static void main(String[] args) {
+		System.out.print("Enter your first name: \n>>");
+		String firstName = userinput.nextLine();
+		System.out.print("Enter your middle name: \n>>");
+		String middleName = userinput.nextLine();
+		System.out.print("Enter your last name: \n>>");
+		String lastName = userinput.nextLine();
+		
+		System.out.println("");
+		
+		//special characters used are 😀, ♥, 😎, the modified apostrophe ʼ, and the em-dash —
+		System.out.format("%s %s %s. What a wonderful name! 😀\n\n", firstName, middleName, lastName);
+		System.out.format("%s, be proud of the work you do. Everyone is valuable and important in the world. ♥♥♥\n", firstName);
+		System.out.format("Donʼt compare yourself to others—the best metric you have is self-improvement. \n");
+		System.out.format("Even if thereʼs still a long road ahead of you, I believe you can do it. 😎😎\n\n");
+		System.out.format("Have a great day, %s %s, and keep pushing forward!", firstName, lastName);
+	}
+}
